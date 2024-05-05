@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    color:  hsl(217, 12%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+      
+}
+
+.bold-weight {
+    font-weight: 700; 
+}
+
+.card{
+    background-color: hsl(213, 19%, 12%);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 25px;
+    
+
+
+}
+
+#star{
+    display: block;
+    margin-bottom: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 22%);
+}
+
+#sub-title{
+    font-size: 25px;
+    word-spacing: .2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    
+
+}
+
+
+#text-quest{
+    margin-bottom: 25px;
+    line-height: 1.5em;                     
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+li {
+    border-radius: 50%;
+    padding: 15px 20px;
+    background-color: hsl(213, 19%, 18%);
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px; 
+}
+
+li:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.active{
+    background-color: hsl(217, 12%, 63%);
+    color:white;
+}
+
+#submit{
+    padding: 10px;
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border:none;
+    border-radius: 40px;
+    cursor: pointer;
+    letter-spacing: .1rem;
+    transition: transform 0.3s ease;
+}
+
+#submit:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transform: scale(1.1);
+}
+
+.Thanks{
+    text-align: center;
+}
+
+#image-thank-you{
+    margin:15px;
+    
+}
+#selected{
+    background-color: hsl(213, 19%, 22%);
+    color: hsl(25, 97%, 53%);
+    padding: 5px;
+    border-radius: 20px;
+    margin:0 50px 35px 50px;
+    
+}
+
+#ty{
+    font-size: 25px;
+    word-spacing: .2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+}
+
+#text{
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+  }
+
+
+
+@media (min-width:402px){
+
+    .card{
+        margin: 50px;
+        padding-bottom: 0;
+    }
+    #submit{
+        padding: 15px;
+        
+    }
+    .Thanks{
+        margin: 0;
+    }
+
+    #ty{
+        margin-bottom: 10px;
+    }
+    #text{
+        margin-bottom: 0px;
+    }
+    #image-thank-you {
+        margin: 10px;
+    }
+    .card {
+        
+        padding-bottom: 0;
+      
+    }
+}
